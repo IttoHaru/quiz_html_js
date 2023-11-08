@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+</head>
+<body>
+    <h2>What material is most common in 3D printing?</h2>
+    <select id='q1'>
+        <option value=0>--</option>
+        <option value=1>PLA</option>
+        <option value=0>ABS</option>
+        <option value=0>Nylon</option>
+      </select><br>
+    <h2>Who is the biggest czech 3D printer manufacturer?</h2>
+    <select id='q2'>
+        <option value=0>--</option>
+        <option value=0>Creality</option>
+        <option value=0>Bamboolab</option>
+        <option value=1>Prusa</option>
+      </select><br>
+    <h2>What temprature range is used for most PLA filaments?</h2>
+    <select id='q3'>
+        <option value=0>--</option>
+        <option value=0>120 - 250</option>
+        <option value=0>220 and more</option>
+        <option value=1>180 - 220</option>
+      </select><br>
+    <h2>What firmware is used on most 3D printers?</h2>
+    <select id='q4'>
+        <option value=0>--</option>
+        <option value=0>RepRep</option>
+        <option value=1>Marlin</option>
+        <option value=0>Klipper</option>
+      </select><br>
+    <h2>What is used in SLA 3D printers?</h2>
+    <select id='q5'>
+        <option value=0>--</option>
+        <option value=1>Liquid Resin</option>
+        <option value=0>Pellets</option>
+        <option value=0>Filament</option>
+      </select>
+<br><br>
+    
+  <button onclick='calculus()'>Submit</button>
+    <h2 id='score'></h2>
+    <h2 id="percent"></h2>
+
+    <button id="ref" onclick="refresh()" hidden>Try again</button>
+</body>
+</html>
+
+<script src="Logic.js"></script>
